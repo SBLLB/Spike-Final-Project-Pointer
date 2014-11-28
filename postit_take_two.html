@@ -1,0 +1,21 @@
+<head>
+  <title>postit_take_two</title>
+  <meta name="viewport" content="width=device-width">
+</head>
+
+<body>
+	<div class='column' id='col1'>ToDo
+	<div class='postit' id='686876'>I'm a Postit!</div>
+	</div>
+	<div class='column' id='col2'>Doing</div>
+	<div class='column' id='col3'>Done{{> button}}</div>
+	{{ >pointer}}
+</body>
+
+<template name='pointer'> 
+	<nav style="left:{{x}}px; top:{{y}}px;"></nav>
+</template>
+
+<template name='button'> 
+	<button>PRESS ME</button>
+</template>
